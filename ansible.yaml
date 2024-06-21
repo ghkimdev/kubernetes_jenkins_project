@@ -2,10 +2,10 @@
   become: true
   tasks:
      - name: delete old deployment
-       command: kubectl delete -f /home/vagrant/Deployment.yml
+       command: kubectl delete -f /home/vagrant/Deployment.yaml
      - name: delete old service
-       command: kubectl delete -f /home/vagrant/Service.yml
+       command: kubectl delete -f /home/vagrant/Service.yaml
      - name: create new deployment
-       command: kubectl apply -f /home/vagrant/Deployment.yml
+       command: kubectl apply -f /home/vagrant/Deployment.yaml
      - name: create new service
-       command: kubectl apply -f /home/vagrant/Service.yml
+       command: kubectl apply -f /home/vagrant/Service.yaml
